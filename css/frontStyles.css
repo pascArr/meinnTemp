@@ -1,63 +1,49 @@
 /** GLOBAL STYLES **/
 
-
+/**html{
+  overflow:auto; 
+}**/
 body {
-  font-size: 16px;
-  color: #fff;
-  background-color: #8BC34A;
-  /* This property comes from google.com/fonts/quick-use*/
-  font-family: 'Archivo Narrow', sans-serif;
-  font-weight:400;
+  
+
+  background-color: #42233e;
+  overflow-x: hidden;
+  
 }
 
 /** HEADER **/
+
 #header-nav {
-  /*background-color: #a3d5d3;*/
-  background-color:green;
+  background-color:#ecece2;
   border-radius: 0;
   border: 0;
 }
 
-#logo-img {
-  background: url('../images/FlowerSeriesLOGO.png') no-repeat;
-  width: 200px;
-  height: 200px;
-  margin: 10px 15px 10px 0;
-}
-
 .navbar-header {
 
-  height:150px;
-
-}
-.navbar-brand {
-  padding-top: 25px;
+  height:120px;
 
 }
 
-.navbar-brand h1 { /* Website name */
-  font-family: 'Roboto', sans-serif;
-  color: #7C84C8;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: .75;
+
+.logo-img {
+  background: url('../images/meiLogo190x90.png') no-repeat;
+  width: 150px;
+  height: 105px;
+  margin: 2px 15px 1px 15px;
 }
+
+
+#collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+#collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
-}
-.navbar-brand p { /* CLOUD certified */
-  color: white;
-  text-transform: uppercase;
-  font-size: .80em;
-  margin-top: 15px;
-}
-.navbar-brand p span { /* cloudStamp */
-  vertical-align: middle;
-  /*padding-top: .85em;*/
 }
 
 
@@ -75,7 +61,7 @@ body {
 
 #nav-list a:hover {
   
-  background-color:#8BC34A;
+  background-color:#806f7e;
 
 }
 
@@ -85,35 +71,25 @@ body {
 }
 
 
-#statement a span { 
-
-  margin-top:5px;
-  text-align: right;
-  padding: 15px 15px 0 0;
-  font-size:12px;
-  color:white;
-  font-weight:100;
-}
-
-/*#phone div {
-  color: #263238;
-  text-align: right;
-  padding-right: 15px;
-  font-size:1.2em;
-}*/
-
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid green;
+  border: 1px solid #806f7e;
   background-color:#ddd;
 }
 .navbar-header button.navbar-toggle {
-  clear: both;
-  margin-top: -30px;
+  
+  
 }
 
 /**HEADER END**/
 
 /**HOME PAGE**/
+
+#main-content{
+  margin-left:20px;
+
+}
+
+
 
 #produce-tile, #product-tile, #map-tile {
   height: 250px;
@@ -193,25 +169,11 @@ body {
 
 /* RESPONSIVE ELEMENTS */
 
-@media (min-width: 1200px){
+@media only screen and (max-width: 1920px){
 
 
-  .container .jumbotron {
-    background: url('../images/lettuce-1200.jpeg') no-repeat;
-    height: 675px;
-    box-shadow: 0 0 50px  #d2e8bf;
-    border: 2px solid #aad489;
-    padding-color:#eaf4e0;
 
-    
-  }
 
-  /*#produce-tile, #product-tile{
-
-    width:360px;
-    margin: 0 auto 15px;
-    
-  }*/
   #address {
     margin-left:50px;
   }
@@ -244,28 +206,18 @@ body {
 
 }
 
-@media (min-width: 992px) and (max-width: 1199px ){
+@media only screen and (max-width: 1200px)  {
 
-#logo-img {
-  background: url('../images/FlowerSeriesLOGO.png') no-repeat;
-  width: 200px;
-  height: 200px;
-  margin: 10px 15px 10px 0;
-}
 
-#nav-list{
 
-  font-size:12px;
+  
+
+  #nav-list{
+
+    font-size:12px;
 }
 
 
-  .container .jumbotron {
-    background: url('../images/lettuce-992.jpeg') no-repeat;
-    height: 523px;
-    box-shadow: 0 0 50px  #d2e8bf;
-    border: 2px solid #aad489;
-    padding-color:#eaf4e0;
-}
 
   #produce-tile, #product-tile{
 
@@ -309,49 +261,18 @@ body {
 
 }
 
-@media (min-width: 768px) and (max-width: 991px ){
+@media only screen and (max-width: 979px){  
 
-/*class="navbar-header VS. container"*/
-.container {
 
-  height:115px;
 
-}
-
-.navbar-brand p img { /* cloud certified*/ 
-    height: 45px;
-  }
-
-#logo-img {
-  background: url('../images/FlowerSeriesLOGOsmall.png') no-repeat;
-  width: 90px;
-  height: 90px;
-  margin: 5px 5px 5px 0;
-}
-
-#statement a { /*statement */
-  text-align: right;
-  padding-bottom: 0;
-  font-size:.85em;
-
-}
-
-#nav-list {
-  margin-top: 10px;
-  font-size:.55em;
+  #nav-list {
+    margin-top: 10px;
+    font-size:.75em;
 }
 
 
-  .container .jumbotron {
-    background: url('../images/lettuce-768.jpeg') no-repeat;
-    height: 425px;
-    box-shadow: 0 0 50px  #d2e8bf;
-    border: 2px solid #aad489;
-    padding-color:#eaf4e0;
 
-}
-
-#produce-tile, #product-tile{
+  #produce-tile, #product-tile{
 
     width:345px;
     margin: 0 auto 15px;
@@ -406,24 +327,9 @@ body {
 
 }
 
-@media (max-width: 767px) and (min-width: 480px ) {
+@media only screen and (max-width: 767px ){
   
-  .navbar-brand {
-    padding-top: 10px;
-    height: 80px;
-  }
-  .navbar-brand h1 { /* beauty and food */
-    padding-top: 10px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */
-  }
-  .navbar-brand p { /* cloud certified */
-    font-size: 2vw;
-    margin-top: 12px;
-  }
-  .navbar-brand p img { /* cloud certified */
-    height: 35px;
-  }
-
+  
   #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
   }
@@ -434,24 +340,14 @@ body {
 
 
 
-  .container .jumbotron {
-    margin-top:15px;
-    padding:0px 0px 0px 0px;
-    box-shadow: 0 0 50px  #d2e8bf;
-    border: 2px solid #aad489;
-    padding-color:#eaf4e0;
-
-}
-
-
- #produce-tile, #product-tile{
+  #produce-tile, #product-tile{
 
     width:360px;
     margin: 15px auto 15px ;
 
   }
 
-#map-tile{
+  #map-tile{
 
     width:360px;
     margin: 15px auto 15px ;
@@ -461,11 +357,7 @@ body {
 
 
 
-  /* Home Page */
-  .container .jumbotron {
-    margin-top: 30px;
-    padding: 0;
-  }
+  
   #menu-tile, #specials-tile {
     width: 360px;
     margin: 0 auto 15px;
@@ -496,7 +388,7 @@ body {
   }
 
 
-#testimonials {
+  #testimonials {
     font-style: italic;
     width:90%;
     margin:0% 5% 0% 5%;
@@ -508,18 +400,9 @@ body {
 }
 
 /* For super extra small devices (i.e. iphone 5) */
-@media (max-width: 479px){
+@media only screen and (max-width: 480px){
 
-  
 
-  .container .jumbotron {
-    margin-top:15px;
-    padding:0px 0px 0px 0px;
-    box-shadow: 0 0 50px  #d2e8bf;
-    border: 2px solid #aad489;
-    padding-color:#eaf4e0;
-
-}
 
 
   #produce-tile, #product-tile, #map-tile {
@@ -556,7 +439,7 @@ body {
   }
 
 
-#testimonials {
+  #testimonials {
     font-style: italic;
     width:90%;
     margin:0% 5% 0% 5%;
@@ -564,6 +447,12 @@ body {
 
 
   /* End Footer */
+
+
+}
+
+@media only screen and (max-width: 320px){
+
 
 
 }
